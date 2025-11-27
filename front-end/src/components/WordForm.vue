@@ -1,4 +1,4 @@
-<template>
+ <template>
     <form action="#" @submit.prevent="onSubmit">                   <!-- Form element with submit event prevented and handled by 'onSubmit' -->
         <p v-if="errorsPresent" class="error">Please fill out both fields!</p> <!-- Show error message if validation fails -->
 
@@ -37,7 +37,8 @@ export default {
             default: () => {                                      // If not passed, use this default object
                 return {
                     english: '',
-                    german: ''
+                    german: '',
+                    vietnamese: '',
                 };
             }
         }
